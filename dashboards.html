@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboards • NovaTask</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="bg-gradient"></div>
+
+    <header class="navbar">
+        <div class="logo">Nova<span>Task</span></div>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="dashboards.html" class="active-link">Dashboards</a>
+            <a href="stats.html">Stats</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <span class="toggle-icon">🌙</span>
+            </button>
+            <button class="btn btn-sm" id="login-btn">Login</button>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="modal" id="login-modal">
+        <div class="modal-content card">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <h2>Demo Login</h2>
+            <p class="muted">Use the following credentials for the demo login.</p>
+            <ul class="demo-creds">
+                <li><strong>Email:</strong> demo@gmail.com</li>
+                <li><strong>Password:</strong> 12345</li>
+            </ul>
+            <form class="form" id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" placeholder="demo@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input required type="password" id="password" placeholder="12345">
+                </div>
+                <button type="submit" class="btn btn-full">Login</button>
+                <p class="form-message" id="form-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="section-header reveal">
+            <h2>Dashboard layouts</h2>
+            <p>Layouts designed for different use cases.</p>
+        </div>
+
+        <div class="filter-bar reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="personal">Personal</button>
+            <button class="filter-btn" data-filter="team">Team</button>
+            <button class="filter-btn" data-filter="analytics">Analytics</button>
+        </div>
+
+        <div class="grid-3 project-grid">
+            <article class="card project-card reveal" data-category="personal">
+                <div class="card-tag">Personal</div>
+                <h3>Student Focus Board</h3>
+                <p>
+                    Minimal layout showing classes, assignments and a deep-work timer.
+                </p>
+                <ul class="card-list">
+                    <li>Subject-wise task groups</li>
+                    <li>Pomodoro tracker</li>
+                    <li>Daily reflection widget</li>
+                </ul>
+                <button class="btn btn-sm ghost-btn">Preview</button>
+            </article>
+
+            <article class="card project-card reveal" data-category="team">
+                <div class="card-tag">Team</div>
+                <h3>Squad Sprint Hub</h3>
+                <p>
+                    Kanban-style board for development teams with sprint goals and owners.
+                </p>
+                <ul class="card-list">
+                    <li>Drag and drop columns</li>
+                    <li>Reviewer highlights</li>
+                    <li>Release checklist</li>
+                </ul>
+                <button class="btn btn-sm ghost-btn">Preview</button>
+            </article>
+
+            <article class="card project-card reveal" data-category="analytics">
+                <div class="card-tag">Analytics</div>
+                <h3>Productivity Radar</h3>
+                <p>
+                    Visualises focus time, interruptions and task completion in one view.
+                </p>
+                <ul class="card-list">
+                    <li>Weekly performance graph</li>
+                    <li>Task type breakdown</li>
+                    <li>Suggested improvements</li>
+                </ul>
+                <button class="btn btn-sm ghost-btn">Preview</button>
+            </article>
+
+            <article class="card project-card reveal" data-category="analytics">
+                <div class="card-tag">Analytics</div>
+                <h3>Engineering Insights</h3>
+                <p>
+                    Technical metrics for builds, tests and deployment frequency.
+                </p>
+                <ul class="card-list">
+                    <li>Build success ratio</li>
+                    <li>Average deployment time</li>
+                    <li>Flaky test tracking</li>
+                </ul>
+                <button class="btn btn-sm ghost-btn">Preview</button>
+            </article>
+
+            <article class="card project-card reveal" data-category="team">
+                <div class="card-tag">Team</div>
+                <h3>Remote Stand-ups</h3>
+                <p>
+                    Async stand-up board for quick daily updates without meetings.
+                </p>
+                <ul class="card-list">
+                    <li>What I did and will do</li>
+                    <li>Blocker panel</li>
+                    <li>Team mood indicator</li>
+                </ul>
+                <button class="btn btn-sm ghost-btn">Preview</button>
+            </article>
+
+            <article class="card project-card reveal" data-category="personal">
+                <div class="card-tag">Personal</div>
+                <h3>Life OS</h3>
+                <p>
+                    Central dashboard for goals, habits, health and finances.
+                </p>
+                <ul class="card-list">
+                    <li>Habit streaks</li>
+                    <li>Sleep score</li>
+                    <li>Expense snapshot</li>
+                </ul>
+                <button class="btn btn-sm ghost-btn">Preview</button>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 NovaTask. Built by Manit Shukla as a Web Development Lab project.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

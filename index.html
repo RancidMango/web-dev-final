@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTask • Productivity Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="bg-gradient"></div>
+
+    <header class="navbar">
+        <div class="logo">Nova<span>Task</span></div>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="dashboards.html">Dashboards</a>
+            <a href="stats.html">Stats</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <span class="toggle-icon">🌙</span>
+            </button>
+            <button class="btn btn-sm" id="login-btn">Login</button>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="modal" id="login-modal">
+        <div class="modal-content card">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <h2>Demo Login</h2>
+            <p class="muted">Use the following credentials for the demo login.</p>
+            <ul class="demo-creds">
+                <li><strong>Email:</strong> demo@gmail.com</li>
+                <li><strong>Password:</strong> 12345</li>
+            </ul>
+            <form class="form" id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" placeholder="demo@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input required type="password" id="password" placeholder="12345">
+                </div>
+                <button type="submit" class="btn btn-full">Login</button>
+                <p class="form-message" id="form-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero-content reveal">
+            <p class="badge">Web Development Final Project • 2024</p>
+            <h1>Stay organised, ship faster, stress less.</h1>
+            <p class="hero-subtitle">
+                NovaTask is a modern productivity dashboard template designed for teams
+                that want clean UI, live metrics and a smooth workflow.
+            </p>
+            <div class="hero-actions">
+                <a href="dashboards.html" class="btn btn-full">View Dashboards</a>
+                <a href="features.html" class="btn btn-outline">Explore Features</a>
+            </div>
+            <div class="hero-meta">
+                <div>
+                    <span class="meta-label">Response time</span>
+                    <span class="meta-value">120ms</span>
+                </div>
+                <div>
+                    <span class="meta-label">Teams using it</span>
+                    <span class="meta-value">1.2k+</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal">
+            <div class="glass-panel">
+                <h3>Today</h3>
+                <p class="muted small">Sprint 24 • In progress</p>
+                <div class="progress-wrapper">
+                    <span>Ship feature X</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 68%"></div>
+                    </div>
+                    <span class="progress-value">68%</span>
+                </div>
+                <div class="pill-row">
+                    <span class="pill pill-success">On track</span>
+                    <span class="pill pill-soft">5 tasks left</span>
+                </div>
+                <div class="mini-grid">
+                    <div class="mini-card">
+                        <span class="mini-label">Focus time</span>
+                        <span class="mini-value">3h 12m</span>
+                    </div>
+                    <div class="mini-card">
+                        <span class="mini-label">Bugs</span>
+                        <span class="mini-value bad">3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-card card-sm">
+                <h4>Team Activity</h4>
+                <ul>
+                    <li><span class="dot green"></span> Manit completed "API Integration"</li>
+                    <li><span class="dot yellow"></span> Reviewer added 3 comments</li>
+                    <li><span class="dot blue"></span> Build passed in 23 seconds</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header reveal">
+            <h2>Overview</h2>
+            <p>NovaTask is a responsive, animated dashboard interface built with HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="grid-3">
+            <article class="card feature-card reveal">
+                <div class="icon-circle">⚡</div>
+                <h3>Modern UI</h3>
+                <p>Glassmorphism cards, gradients and smooth hover effects to keep the interface clean and sharp.</p>
+            </article>
+
+            <article class="card feature-card reveal">
+                <div class="icon-circle">📱</div>
+                <h3>Fully responsive</h3>
+                <p>Works on desktops, tablets and phones using CSS Grid, Flexbox and media queries.</p>
+            </article>
+
+            <article class="card feature-card reveal">
+                <div class="icon-circle">🧠</div>
+                <h3>Interactive</h3>
+                <p>Filterable dashboards, animated counters, theme toggle and modal-based demo login.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 NovaTask. Built by Manit Shukla as a Web Development Lab project.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
