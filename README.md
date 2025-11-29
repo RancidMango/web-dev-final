@@ -30,15 +30,16 @@ The project focuses on building a real-world style dashboard.
 
 ---
 
-## 🔐 Login Details (If Required)  
+## 🔐 Login Details 
 
 **Username / Email:** demo@gmail.com  
 **Password:** 12345  
 
 ---
 
-## 🚀 Deployment Link (Mandatory)  
+## 🚀 Deployment Link 
 Live Project Link:  
 https://RancidMango.github.io/web-dev-final/  
 
 ---
+
